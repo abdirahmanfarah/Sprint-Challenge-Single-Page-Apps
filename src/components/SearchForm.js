@@ -3,7 +3,7 @@ import CharacterList from './CharacterList'
 
 export default function SearchForm(props) {
 
-  const[find, setFind] = useState([])
+  const[find, setFind] = useState({})
  
   const handleChange = event => {
     setFind({...find, [event.target.name] :event.target.value})
@@ -16,7 +16,7 @@ export default function SearchForm(props) {
     if(!find.name){
       alert('No Name Exists');
     }else {
-      props.results.setCharacter.filter(character => (
+      props.setFind.filter(character => (
         <span>{character.name}</span>
         )
       )
@@ -29,7 +29,11 @@ export default function SearchForm(props) {
     <section className="search-form">
 
       <form onSubmit ={handleInputChange}>
-        <input type ="text" name="search" onChange ={handleChange} placeholder="Search Name" />
+        <input 
+        type ="text"
+        //  ref={input => props.search= input}
+         onChange ={handleChange} 
+         placeholder="Search Name" />
         </form>
     </section>
   );
