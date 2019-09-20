@@ -29,6 +29,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Cient-side routing is hosted locally and loads up all at once, whereas server-side routing is hosted on a server and loads each page individually. Thus client side routing may take a while to load up initially but after that, each page is easy to navigate, while server side may be faster on individual pages, but suffers when it has multiple pages, like FB has or Amazon. 
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
