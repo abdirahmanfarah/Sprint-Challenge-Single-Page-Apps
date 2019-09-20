@@ -1,9 +1,13 @@
 import React from "react";
+import { Route, Link} from 'react-router-dom';
+import CharacterList from './CharacterList'
 
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <header>
+      
+        {/* <Link to="/">Home</Link> */}
         <h1>Welcome to the ultimate fan site!</h1>
         <img
           className="main-img"
